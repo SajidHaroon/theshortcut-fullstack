@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RockPaperScissors</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h2>Welcome to Rock-Paper-Scissors Game!</h2>
+    <p style="color:maroon;">Make a move by clicking icons!</p>
+    <div class="selections">
+        <button  class="selection" data-selection="rock" title="Rock">✊</button>
+        <button  class="selection" data-selection="paper" title="Paper">✋</button>
+        <button  class="selection" data-selection="scissors" title="scissors">🤞</button>
+    </div>
+    <button style="margin-left: 35rem; background-color: orangered;" onClick="window.location.reload();">Reset Game</button>
+    <p id="scores"><u>Scores</u></p>
+    
+    <div class="results">
+        <div>
+            You
+            <span class="result-score" data-your-score>0</span>
+        </div>
+        <div data-final-column> <!--This is a selector -->
+            Computer
+            <span class="result-score" data-computer-score>0</span>
+        </div>
+        <!-- <div class="result-selection winner">✊</div>
+        <div class="result-selection">🤞</div> -->
+    </div>
+</body>
+</html>
